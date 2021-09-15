@@ -6,16 +6,18 @@ license = "WTFPL"
 publish = false
 
 [dependencies]
-solana-program = "=1.7.8"
+solana-program = "1.7.11"
+spl-token = { version = "3.2.0", features = ["no-entrypoint"] }
+thiserror = "1.0.29"
 
 [features]
 test-bpf = []
 
 [dev-dependencies]
-assert_matches = "1.4.0"
-solana-program-test = "=1.7.8"
-solana-sdk = "=1.7.8"
-solana-validator = "=1.7.8"
+assert_matches = "1.5.0"
+solana-program-test = "1.7.11"
+solana-sdk = "1.7.11"
+solana-validator = "1.7.11"
 
 [lib]
 crate-type = ["cdylib", "lib"]
